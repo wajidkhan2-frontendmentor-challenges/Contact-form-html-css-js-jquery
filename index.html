@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+	<link rel="stylesheet" href="style.css">
+	<title>Frontend Mentor | Contact form</title>
+</head>
+<body>
+
+	<div class="document-main">
+		<div id="succes-msg" class="succes-msg" tabindex="-1" style="display: none;">
+			<h3>
+				<img src="./assets/images/icon-success-check.svg" alt="">
+				<span>Message Sent!</span>
+			</h3>
+			<p>Thanks for completing the form. We'll be in touch soon!</p>
+		</div>
+		<div class="Contact-Us-main">
+
+			<h1>Contact Us</h1>
+		
+			<div id="error-list" class="sr-only" tabindex="-1"></div>
+		
+			<form id="contectForm" action="#" method="post">
+		
+				<div class="container-gap fields-flex">
+					<div class="fields-d-c">
+						<label for="first-name-field">First Name <span class="required-mark">*</span></label>
+						<input type="text" aria-required="true" id="first-name-field" name="First Name" class="field-i" tabindex="0">
+						<span id="first-name-field-error" class="field-error">This field is required</span>
+					</div>
+			
+					<div class="fields-d-c">
+						<label for="last-name-field">Last Name <span class="required-mark">*</span></label>
+						<input type="text" aria-required="true" id="last-name-field" name="Last Name" class="field-i">
+						<span id="last-name-field-error" class="field-error">This field is required</span>
+					</div>
+				</div>
+		
+				<div class="container-gap fields-d-c">
+					<label for="email-address-field">Email Address <span class="required-mark">*</span></label>
+					<input type="text" aria-required="true" id="email-address-field" name="Email Address" class="field-i">
+					<span id="email-address-field-error" class="field-error">This field is required</span>
+				</div>
+		
+				<div class="container-gap">
+					<div id="QueryType-radiogroup" role="radiogroup"  aria-labelledby="Query-Type-label" aria-required="true" tabindex="0">
+						<div id="Query-Type-label">Query Type <span class="required-mark">*</span></div>
+
+						<div id="QueryType-radioOptions" class="radio-fields fields-flex">
+							<div class="fields-d-c">
+								<input id="General-Enquiry" type="radio" name="Query-Type" value="General Enquiry" class="field-r sr-only">
+								<label for="General-Enquiry" class="field-r-label">
+									<span class="field-r-icn-uncheck"></span>
+									<img class="field-r-icn-check" src="./assets/images/icon-radio-selected.svg" alt="">
+									General Enquiry
+								</label>
+							</div>
+		
+							<div class="fields-d-c">
+								<input id="Support-Request" type="radio" name="Query-Type" value="Support Request" class="field-r sr-only">
+								<label for="Support-Request" class="field-r-label">
+									<span class="field-r-icn-uncheck"></span>
+									<img class="field-r-icn-check" src="./assets/images/icon-radio-selected.svg" alt="">
+									Support Request
+								</label>
+							</div>
+						</div>
+
+					</div>
+					<span id="QueryType-radioOptions-error" class="field-error">This field is required</span>
+				</div>
+				
+				<div class="container-gap fields-d-c">
+					<label for="Message-field">Message <span class="required-mark">*</span></label><br>
+					<textarea id="Message-field" name="message" class="field-i message-box" aria-required="true"></textarea>
+					<span id="Message-field-error" class="field-error">This field is required</span>
+				</div>
+				
+				<div class="container-gap fields-d-c">
+					<input id="consent-checkbox" class="consent-checkbox sr-only" type="checkbox" name="consent" value="" aria-required="true" >
+					<label class="consent-checkbox-label" for="consent-checkbox">
+						<span class="checkbox-unchecked"></span>
+						<img class="checkbox-checked" src="./assets/images/icon-checkbox-check.svg" alt="">
+						I consent to being contacted by the team <span class="required-mark">*</span>
+					</label>
+					<span id="consent-checkbox-error" class="field-error">This field is required</span>
+				</div>
+		
+				<button type="submit" class="submit-btn">Submit</button>
+		
+			</form>
+		</div>
+	</div>
+
+
+	<script src="./jquery-3.7.1.js"></script>
+	<script src="./myscript.js"></script>
+<!-- 
+	Contact Us
+
+	First Name
+	This field is required
+
+	Last Name
+	This field is required
+
+	Email Address
+	Please enter a valid email address
+	This field is required
+
+	Query Type
+	General Enquiry
+	Support Request
+	Please select a query type
+
+	Message
+	This field is required
+
+	I consent to being contacted by the team
+	To submit this form, please consent to being contacted
+
+	Submit
+
+	Message Sent!
+	Thanks for completing the form. We'll be in touch soon!
+
+	<div class="attribution">
+	Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+	Coded by <a href="#">Your Name Here</a>.
+	</div> 
+	Contact form html css js jquery
+-->
+</body>
+</html>
+
+
+
+
+
