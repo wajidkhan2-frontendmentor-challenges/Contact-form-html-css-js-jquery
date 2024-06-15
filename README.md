@@ -9,7 +9,7 @@ desktop view\
 ![](./Screenshots/desktop.png)
 
 ### Demo
-[FireShot](https://getfireshot.com/)
+[FireShot](https://wajidkhan2-frontendmentor-challenges.github.io/Contact-form-html-css-js-jquery/)
 
 ### Built with
 - Mobile-first workflow
